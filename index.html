@@ -36,10 +36,11 @@
 
         /* --- KARTY PROJEKTÓW --- */
         .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-        .card { background-color: #1e293b; padding: 30px; border-radius: 12px; border: 1px solid #334155; transition: all 0.4s ease; }
+        .card { background-color: #1e293b; padding: 30px; border-radius: 12px; border: 1px solid #334155; transition: all 0.4s ease; display: flex; flex-direction: column;}
         .card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.4); border-color: #38bdf8; }
         .card h3 { color: #f8fafc; margin-bottom: 15px; font-size: 1.5rem; }
-        .tech-stack { font-size: 0.85rem; color: #38bdf8; margin-top: 15px; font-weight: 600; }
+        .tech-stack { font-size: 0.85rem; color: #38bdf8; margin-top: auto; font-weight: 600; padding-top: 15px;}
+        .project-links { margin-top: 15px; display: flex; gap: 15px; font-size: 0.9rem; font-weight: 600; }
 
         /* --- STOPKA --- */
         footer { text-align: center; padding: 30px 0; color: #64748b; font-size: 0.9rem; }
@@ -59,7 +60,8 @@
         <section id="umiejetnosci" data-aos="fade-right" data-aos-duration="800">
             <h2>Technologie i Narzędzia</h2>
             <div class="skills-grid">
-                <div class="skill-tag" style="border-color: #38bdf8">Python (poziom akademicki)</div>
+                <div class="skill-tag" style="border-color: #38bdf8">Java (Podstawy, OOP)</div>
+                <div class="skill-tag" style="border-color: #38bdf8">Python (Streamlit, Matplotlib, Seaborn, JSON)</div>
                 <div class="skill-tag" style="border-color: #38bdf8">HTML & CSS</div>
                 <div class="skill-tag" style="border-color: #38bdf8;">Git</div>
                 <div class="skill-tag" style="border-color: #a855f7;">SQL (w trakcie nauki)</div>
@@ -71,14 +73,31 @@
             <div class="projects-grid">
                 
                 <div class="card">
-                    <h3>Osobiste Portfolio WWW</h3>
-                    <p style="color: #94a3b8;">Nowoczesna strona internetowa z płynnymi animacjami scrollowania.</p>
-                    <p class="tech-stack">HTML &bull; CSS &bull; AOS.js &bull; Git</p>
+                    <h3>GymTracker Pro 🏋️‍♂️</h3>
+                    <p style="color: #94a3b8; margin-bottom: 10px;">Zaprojektowałem i wdrożyłem aplikację chmurową dla trenerów personalnych. System pozwala na zarządzanie bazą klientów, logowanie wyników siłowych oraz śledzenie pomiarów ciała. Zaimplementowałem interaktywne wykresy z dynamiczną osią czasu.</p>
+                    <div class="project-links">
+                        <a href="#" target="_blank">🌐 Live Demo</a>
+                        <a href="#" target="_blank">💻 Kod na GitHub</a>
+                    </div>
+                    <p class="tech-stack">Python &bull; Streamlit &bull; Seaborn &bull; JSON CRUD</p>
                 </div>
 
-                <div class="card" style="border: 1px dashed #475569; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
-                    <h3 style="color: #64748b;">Projekt z uczelni</h3>
-                    <p style="color: #64748b; font-size: 0.9rem;">(Tu dodamy opis aplikacji, którą robiłeś na zajęciach)</p>
+                <div class="card">
+                    <h3>Bitwa Morska (Hot-Seat) 🚢</h3>
+                    <p style="color: #94a3b8; margin-bottom: 10px;">Klasyczna gra w statki napisana w czystej Javie z myślą o architekturze obiektowej. Posiada tryb dla dwóch graczy na jednym komputerze, system tur, "mgłę wojny" (ukrywanie planszy przeciwnika) oraz walidację wprowadzanych danych i mini-grę losującą kolejność.</p>
+                    <div class="project-links">
+                        <a href="#" target="_blank">💻 Kod na GitHub</a>
+                    </div>
+                    <p class="tech-stack">Java &bull; OOP &bull; Scanner &bull; Arrays</p>
+                </div>
+
+                <div class="card">
+                    <h3>Osobiste Portfolio WWW</h3>
+                    <p style="color: #94a3b8; margin-bottom: 10px;">Nowoczesna strona internetowa z płynnymi animacjami scrollowania. Moja wizytówka w sieci zrealizowana zgodnie z dobrymi praktykami RWD.</p>
+                    <div class="project-links">
+                        <a href="#" target="_blank">💻 Kod na GitHub</a>
+                    </div>
+                    <p class="tech-stack">HTML &bull; CSS &bull; AOS.js &bull; Git</p>
                 </div>
 
             </div>
@@ -102,7 +121,8 @@
                     <p style="color: #cbd5e1; font-size: 0.95rem;">Kiedy akurat nie koduję i nie trenuję, to pewnie planuję kolejny wyjazd. Muzyka na żywo to moja wielka pasja – rocznie jeżdżę na kilkanaście koncertów, często łącząc to z odkrywaniem nowych miejsc na świecie. Uwielbiam podróżować, zbierać nowe doświadczenia i po prostu dobrze spędzać czas. To dla mnie najlepsza odskocznia, która świetnie wietrzy głowę. Dzięki temu z pełną energią wracam do nauki i pracy nad swoimi projektami.</p>
                 </div>
 
-            </div> </section>
+            </div> 
+        </section>
         
         <section id="kontakt" data-aos="zoom-in" data-aos-duration="800">
             <h2>Porozmawiajmy!</h2>
